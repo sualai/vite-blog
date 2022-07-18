@@ -1,0 +1,21 @@
+{
+  "name": "vite-blog",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@vitejs/plugin-vue-jsx": "^2.0.0",
+    "element-plus": "^2.2.9",
+    "unplugin-auto-import": "^0.9.3",
+    "vue": "^3.2.37"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^3.0.0",
+    "unplugin-vue-components": "^0.21.1",
+    "vite": "^3.0.0"
+  }
+}
