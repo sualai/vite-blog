@@ -36,7 +36,7 @@ export default defineConfig({
     '@': path.resolve(__dirname, 'src'),
     },
     // 忽略后缀名的配置选项, 添加 .vue 选项时要记得 原本默认忽略的选项也要⼿动写⼊
-    extensions: ['.mjs', '.js', '.ts', '.jsx','.tsx', '.json', '.vue'],
+    extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json', '.vue', '.less'],
    },
   server: {
     open: true,
@@ -50,10 +50,10 @@ export default defineConfig({
     proxy: {
       '/api': {
         target:
-          '127.0.0.1: 5000',
+          'http://localhost:5000',
         changeOrigin: true,
         rewrite: (path) =>
-          path.replace(/^\/api/, '')
+          path.replace(/^\/api/, '/api')
       },
     }
   },
